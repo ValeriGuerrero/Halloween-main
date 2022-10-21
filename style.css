@@ -1,0 +1,443 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;;
+}
+header{
+    width:100vw;
+    height:100vh;
+    background-image: url(./images/halloween-head.webp);
+    background-position:bottom;
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+}
+
+
+body , html{
+    overflow-x: hidden; /*hidden scroll bar left-right*/
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/*nav bar*/
+ul{
+    list-style: none;
+}
+
+.navbar{
+    position:absolute;
+    top:0;
+    left:0;
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    padding:18px;
+    color:whitesmoke
+}
+
+.logo{
+  width: 40px;
+  height:35px;
+  border-radius: 40px;
+
+}
+
+.link-bar{
+    display:flex;
+    align-items: center;
+
+}
+
+.link-bar li:hover{
+    color:#C689C6;
+    
+    
+}
+
+.link-bar li{
+    margin:auto 20px;
+    cursor:pointer;
+}
+
+
+/* a tags stay the same color */
+
+.link-bar a{
+    color:white;
+}
+.link-bar a:active{
+    color:white;
+}
+.link-bar a[tabindex]:focus{
+    color:white;
+    outline: none;
+}
+
+.link-bar a:hover{
+    color:#C689C6;
+}
+
+/* dropdown */
+.dropbtn {
+    background-color: purple;
+    border-radius: 25px;
+    color:white;
+    padding: 13px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-contact {
+    display: none;
+    position: absolute;
+    background-color: none;
+    min-width: 100px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-contact a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-contact a:hover {background-color: black}
+  
+  .dropdown:hover .dropdown-contact {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: purple;
+  }
+
+
+
+/* top-container */
+
+.head-container{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.head-container h2{
+    font-size:3vmin;
+    font-style: italic;
+}
+.head-container h1{
+    font-size: 5vmin;
+    margin-top:35px;
+    margin-bottom: 25px;
+}
+
+.btn{
+    padding:10px 15px;
+    background: purple;
+    border-radius: 25px;
+    color:white;
+}
+
+.btn:hover{
+    background-color: #C689C6;
+}
+
+.nv {
+    border-radius: 25px;
+    color:white;
+}
+
+
+.stripes-button{
+    position: absolute;
+   width:25px;
+    top:20px;
+    right:20px;
+    cursor:pointer;
+    display: none;
+}
+
+
+
+/*events*/
+section{
+    width:80%;
+    margin:70px auto;
+    text-align: center;
+}
+
+.events{
+    font-size:3vmin;
+    color:purple;
+}
+
+.col img{
+    width:50vmin;
+    height:40vmin;
+    border:1px solid gray;
+  
+   
+}
+
+
+
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row1{
+    padding-bottom: 35px;
+}
+
+.halloween-events .row{
+margin-top: 50px;
+
+}
+
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.halloween-events .btn{
+  margin-top: 20px;
+}
+
+.events h1{
+    font-size: 3vmin;
+}
+h4{
+    font-size: 3vmin;
+    color:purple;
+    margin:20px auto;
+}
+
+p{
+    color:black;
+    padding:0px 50px;
+}
+
+
+/*video*/
+
+
+.video .kids-video{
+   display: block;
+    margin: 0 auto;
+    background-color: #777;
+}
+
+
+
+/* cotact*/
+.contact {
+   
+    height: 500px;
+    width: 600px;
+    background-color: white;
+    margin: auto;
+    text-align: left;
+    width:300px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+
+.contact-horizon{
+    border-style: dotted none none none;
+  width:6%;
+  color:purple;
+  border-width:10px;
+
+
+}
+
+.about hr{
+    margin:0 auto;
+}
+
+hr .contact-horizon{
+    padding-top: 10px;
+}
+
+
+.authors{
+    margin-bottom: 30px;
+}
+
+.authors p{
+    font-size: 1rem;
+}
+
+.authors-links{
+ margin-top: 30px;
+}
+
+.one, .two {
+        width:300px;
+        display: flex;
+        flex-direction: column; 
+    
+}
+
+.one a, .two a{
+    margin:0 auto;
+}
+
+.contact-section{
+    margin-top:70px;
+}
+
+form{
+    display: flex;
+    
+}
+button{
+    background-color: purple;
+    border: none;
+    border-radius: 25px;
+    color: white;
+  padding:10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #C689C6;
+}
+
+/*about*/
+
+.about{
+    padding-top:150px;
+    text-align: center;
+}
+
+
+/* footer */
+footer {
+    background-image:url(./images/footer.png);
+    background-position:bottom;
+    background-size:cover;
+    height:360px; 
+    text-align:center; 
+   margin-top:100px;
+   
+}
+
+.footer-text{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color:whitesmoke;
+}
+
+/* for mobile device*/
+
+@media only screen and (max-width:900px){
+    .navbar{
+       padding:0;
+    }
+   
+    p{
+        padding:0px 20px;
+    }
+
+    .row{
+        display: block;
+        align-items: center;
+    }
+
+    .halloween-events .row{
+        margin-top: 0px;
+    }
+
+    .stripes-button{
+        display: block;
+        justify-content: space-between;
+    }
+
+    .col img{
+        margin:30px auto;
+    }
+
+    .col img:hover{
+        transition: all;
+    }
+
+    .logo{
+        position:absolute;
+        top:20px;
+        left:10px;
+    }
+
+    .link-bar{
+        flex-direction: column;
+       width: 100%;
+       height:100vh;
+       justify-content: center;
+       background-color:#16213E ;
+       opacity: 0.99;
+       margin-top:-900px;  /* make the nav-bar go at the top*/
+       transition-duration: 1s;
+       transition-timing-function: ease-in-out;
+       
+    }
+    .mobile-button{
+        margin-top:0;
+    }
+
+    .link-bar li{
+        margin:25px auto;
+    }
+ 
+    form{
+        display: block;
+    }
+
+    .two h4{
+        margin-top:20vh;
+    }
+
+    .kids-video{
+        position:relative;
+        width: 400px;
+        height: 300px;
+    }
+
+    .about{
+    margin-top: 9vh;
+   
+    }
+    .authors p{
+        font-size: 3vmin;
+    }
+}
